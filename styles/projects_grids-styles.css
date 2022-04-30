@@ -1,0 +1,35 @@
+.grid-container{
+    display: grid;
+    width: 100%;
+}
+
+.grid-container a{
+    color: black;
+    transition: 1s;
+}
+
+#breakout:hover{
+    color:red;
+    transition: 1s;
+}
+
+#comp_1774_project:hover{
+    color:orange;
+    transition: 1s;
+}
+
+.grid-container .grid-top{
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    text-align: center;
+    margin-bottom: 0.25em;
+}
+
+.grid-left, .grid-right{
+    width: 100%;
+    overflow: hidden;
+}
+
+.grid-container img{
+    width: 100%;
+}

@@ -1,0 +1,114 @@
+*{
+	/* border: solid red 1px; */
+	/* border-collapse: collapse; */
+	padding: 0;
+	margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  background-color: #f6faef; /* White:#DBEBC0 (3:1) */
+  color: #38182F; /* #0F3842 */
+  overflow-x: hidden;
+}
+
+.container{
+  background-color: #DBEBC0;
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* -- NAVIGATION BAR -- */
+nav{
+  position: fixed;
+  top: 0;
+  margin: auto;
+  width: 80%;
+}
+
+nav ul{
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #264653;
+}
+
+nav ul li{
+  float: left;
+}
+
+nav ul li a{
+  display: block;
+  color: #49C6E5;
+  padding: 0.5em 2em;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 0.1em;
+  transition: 0.75s;
+}
+
+nav ul li a:hover{
+  background-color: #49C6E5;
+  color: #264653;
+  transition: 0.75s;
+}
+
+nav ul li #currentPage{
+  background-color: #49C6E5;
+  color: #264653;
+}
+
+nav #three-lines{
+  display: none;
+}
+/* -- END OF NAVIGATION BAR -- */
+
+
+.main-content{
+  /* padding-top: 3em;
+  padding-left: 2em; */
+  padding: 3em 2em 1.5em 2em;
+  width: 49.4427191%; /* 80% Golden Ratio'd  (49.4427191 : 30.5572809 [Left : Right]) */
+}
+
+h2{
+  margin-top: 1em;
+}
+
+h3{
+  margin-top: 0.5em;
+}
+
+p{
+  line-height: 1.2em;
+  margin-top: 1.25em;
+}
+
+footer{
+  background-color:#92d9d3;
+  padding: 0.5em 1em 0.5em 1em;
+  color: #294242;
+}
+
+footer ul{
+  text-align: center;
+  list-style: none;
+}
+
+footer a:link{
+  color: #294242;
+}
+
+footer a:visited{
+  color: #575f4a;
+}
+
+footer a:hover{
+  color: #71a382;
+}
+
+footer ul li{
+  display: inline;
+  padding: 0 1.5em 0 1.5em;
+}

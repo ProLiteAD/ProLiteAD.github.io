@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Projects</title>
+
+		<meta charset="UTF-8">
+		<meta name="author" content="ProLiteAD">
+		<meta name="description" content="Portfolio">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="icon" type="image" href="../favicon.png">
+		<link rel="stylesheet" type="text/css" href="../styles/main-style.css" media="(min-width: 720px)">
+		<link rel="stylesheet" type="text/css" href="../styles/m_main-style.css" media="(max-width: 719px)">
+		<link rel="stylesheet" type="text/css" href="../styles/projects_grids-styles.css" media="(min-width: 720px)">
+		<link rel="stylesheet" type="text/css" href="../styles/m_projects_grids-styles.css" media="(max-width: 719px)">
+
+		<!-- This gets the 'Anton' Font -->
+		<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+		<style>
+			/* Start LoadPage Animation */
+			@keyframes LoadAnimation_UpDown {
+				0%{
+					transform: translateY(-100%);
+				}
+				100%{
+					transform: translateY(0%);
+				}
+			}
+
+			@keyframes LoadAnimation_RightLeft {
+				0%{
+					transform: translateX(200%);
+				}
+				100%{
+					transform: translateX(0%);
+				}
+			}
+
+			@keyframes LoadAnimation_LeftRight{
+				0%{
+					transform: translateX(-100%);
+				}
+				100%{
+					transform: translateX(0%);
+				}
+			}
+
+			body{
+				animation: LoadAnimation_UpDown 1s;
+			}
+
+			nav{
+				animation: LoadAnimation_UpDown 3.5s ease-in-out;
+			}
+
+			.main-content h1{
+				animation: LoadAnimation_RightLeft 5s ease-out;
+			}
+
+			.main-content :not(h1){
+				animation: LoadAnimation_LeftRight 2s ease-out;
+			}
+			/* End LoadPage Animation */
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<nav>
+				<ul id ="three-lines">
+					<li><a href="#" id="nav-menu">≡</a></li>
+				</ul>
+				<ul id="hidden-menu">
+					<li class="hide-navigation-animation"><a href="index.html">Home</a></li>
+					<li class="hide-navigation-animation"><a href="projects.html" id="currentPage">Projects</a></li>
+					<li class="hide-navigation-animation"><a href="my-cv.html">My CV</a></li>
+					<li class="hide-navigation-animation"><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+
+			<div class="main-content" style="width: auto;">
+				<h1>Projects</h1>
+				<p style="color: red;">The files on this page have temporarily been removed!</p>				
+				<h2>Web Development</h2>
+				<div class="grid-container">
+					<div class="grid-top">
+						<h3>1.<a href="#" target="_blank" id="breakout">Breakout</a></h3>
+					</div>
+					<div class="grid-left">
+						<p>After learning JavaScript during term one, I was able to create a basic breakout game using loops and arrays!</p>
+						<p>The player is able to move the paddle with WASD to hit the ball towards the bricks to destroy them. Although there are a few bugs, this was a good learning exercise as it built my confidence with using JavaScript.</p>
+					</div>
+					<div class="grid-right">
+						<img src="../portfolio-assets/web_development/breakout.png" alt="breakout">
+						<p style="margin-top: 0;"><a href="#" target="_blank" id="breakout">CLICK HERE</a> to try.</a></p>
+						<p style="margin-top: 0;">(This project is not suitable for mobile browsers)</p>
+					</div>
+				</div>
+
+				<hr>
+
+				<h2>Game Development</h2>
+				<div class="grid-container">
+					<div class="grid-top">
+						<h3>1.<a href="#" id="comp_1774_project">Top-Down 2D Unity Game</a></h3>
+					</div>
+					<div class="grid-left">
+						<p>During my second term, I was able to create a basic 2D top down game in Unity.</p>
+						<p>The game is mostly a demonstration project showing the applications of some key Unity concepts in a game where the player has to kill enemies with left-click and destroy boxes with the right click. The player is also able to buy items such as extra health at a shop.</p>
+					</div>
+					<div class="grid-right">
+						<img src="../portfolio-assets/game_development/2d_unity_project.png" alt="2d unity project">
+						<p style="margin-top: 0;"><a href="#" id="comp_1774_project">CLICK HERE</a> to try.</a></p>
+						<p style="margin-top: 0;">(This project is not suitable for mobile)</p>
+					</div>
+				</div>
+			</div>
+			<footer>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="projects.html">Projects</a></li>
+					<li><a href="my-cv.html">My CV</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+				
+				<p>This website was designed and developed by ProLiteAD</p>
+			</footer>
+		</div>
+
+		<script src="../scripts/m_navigation-bar.js"></script>
+	</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Home</title>
+
+		<meta charset="UTF-8">
+		<meta name="author" content="ProLiteAD
+		">
+		<meta name="description" content="Portfolio">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="icon" type="image" href="../favicon.png">
+		<link rel="stylesheet" type="text/css" href="../styles/main-style.css" media="(min-width:720px)">
+		<link rel="stylesheet" type="text/css" href="../styles/m_main-style.css" media="(max-width: 719px)">
+
+		<!-- This gets the 'Anton' Font -->
+		<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+		<style>
+			/* Start LoadPage Animation */
+			@keyframes LoadAnimation_LeftRight {
+				0%{
+					transform: translateX(-100%);
+				}
+				100%{
+					transform: translateX(0%);
+				}
+			}
+
+			@keyframes LoadAnimation_UpDown {
+				0%{
+					transform: translateY(-200%);
+				}
+				100%{
+					transform: translateY(0%);
+				}
+			}
+
+			body{
+				animation: LoadAnimation_LeftRight 2s;
+			}
+
+			nav{
+				animation: LoadAnimation_UpDown 3.5s ease-in-out;
+			}
+
+			.main-content{
+				animation: LoadAnimation_LeftRight 3.5s ease-in-out;
+			}
+			/* End LoadPage Animation */
+
+			#lorem-ipsum{
+				transform: translateX(300%);
+			}
+
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<nav>
+				<ul id ="three-lines">
+					<li><a href="#" id="nav-menu">≡</a></li>
+				</ul>
+				<ul id="hidden-menu">
+					<li class="hide-navigation-animation"><a href="index.html" id="currentPage">Home</a></li>
+					<li class="hide-navigation-animation"><a href="projects.html">Projects</a></li>
+					<li class="hide-navigation-animation"><a href="my-cv.html">My CV</a></li>
+					<li class="hide-navigation-animation"><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+
+			<div class="main-content">
+				<h1>Adil (ProLiteAD) </h1>
+				<h2>Who Am I?</h2>
+				<h3>First Year Student at University of Greenwich</h3>
+				<h3>Currently Studying Games and Digital Media Design and Development</h3>
+
+				<p>It's difficult choosing between sitting down all day being a game developer or sitting down all day being web developer. Either way I will be a developer... for somethig! and sit around all day... unless I get a standing desk..?</p>
+
+				<br>
+				<button style="padding: 0.5% 1% 0.5% 1%;" onclick="RevealLoremIpsum()" id="buttonReveal"><strong>Show Lorem Ipsum</strong></button>
+				<div id = "lorem-ipsum" style="display: none;">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam at purus a lorem sagittis fringilla vitae sit amet felis. Nam vehicula luctus sapien. Vivamus sit amet mauris ac quam sollicitudin gravida sit amet ornare turpis. Curabitur sit amet metus egestas, ultricies justo a, aliquam arcu. Integer urna urna, pharetra vitae sapien quis, vestibulum sagittis odio. In nec dolor a magna finibus malesuada in nec leo. Suspendisse potenti. Donec id eros sapien.</p>
+					<p>Integer at mollis tortor. Nunc auctor sit amet justo eget faucibus. Integer vel ex ligula. Duis quis lacus ac nulla viverra venenatis vitae at lorem. Sed sodales rutrum elit in auctor. In faucibus tortor eros. Aliquam gravida tellus sed urna mattis porta. Nunc quis orci dui. Cras fringilla ultricies cursus. Sed finibus, dolor ut convallis scelerisque, ante elit ultricies ex, a feugiat ligula enim ac metus. Nulla sit amet diam ligula. Vestibulum blandit leo vel viverra vestibulum.</p>
+					<p>Nam eu lobortis lorem. Aenean fringilla ipsum nisi, vel blandit nibh ornare eu. Aliquam vitae mauris nec purus mollis finibus sit amet eu ex. Suspendisse aliquam vitae ex sit amet porta. Morbi eu bibendum turpis. Donec odio nulla, condimentum id laoreet quis, sollicitudin sit amet est. Vestibulum cursus est nec ante pretium rutrum. Nulla eget magna ac risus cursus aliquam. Aenean vestibulum sem consequat, aliquet lorem id, suscipit arcu. Maecenas ultricies libero vitae enim tincidunt, vel imperdiet orci scelerisque. Donec tempor tempor mauris ac hendrerit.</p>
+					<p>Vivamus ornare, diam ultricies rhoncus cursus, mauris lectus efficitur metus, eget porttitor metus massa sed mauris. In hac habitasse platea dictumst. Sed luctus fringilla quam vitae porttitor. Aenean et efficitur nisi, et pretium tellus. Vestibulum egestas magna vitae elit egestas, in tempus justo placerat. Praesent fermentum, purus in ultricies placerat, tortor metus feugiat eros, ultrices congue enim dolor quis felis. Vestibulum faucibus, est tincidunt imperdiet lacinia, lacus tortor mollis velit, vitae semper dui magna sed odio. Suspendisse tristique tristique augue sit amet egestas. Ut dapibus nunc metus, sit amet iaculis risus maximus vitae. Nullam convallis, mi sed vestibulum scelerisque, diam orci mollis erat, ac venenatis nunc magna nec nibh. Ut consectetur lobortis diam pellentesque euismod.</p>
+					<p>Proin varius aliquet justo et pharetra. Etiam eget velit turpis. Donec hendrerit massa in felis imperdiet aliquet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam ligula ipsum, rhoncus eget molestie ac, vestibulum ut enim. Maecenas euismod enim purus. Suspendisse dapibus massa at dapibus tincidunt. Integer id risus sed est placerat congue ac ac tortor. Curabitur pulvinar finibus massa, non condimentum nisl. Suspendisse at hendrerit quam. Maecenas et luctus turpis, non scelerisque libero. Morbi sed mi dignissim, fringilla lectus eu, tincidunt diam.</p>
+				</div>
+			</div>
+			<footer>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="projects.html">Projects</a></li>
+					<li><a href="my-cv.html">My CV</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+				
+				<p>This website was designed and developed by ProLiteAD</p>
+			</footer>
+		</div>
+
+		<script src="../scripts/m_navigation-bar.js"></script>
+		<script>
+			let isRevealed = false;
+			const buttonText = document.getElementById("buttonReveal");
+			const loremIpsum = document.getElementById("lorem-ipsum");
+
+			function RevealLoremIpsum(){
+				if(isRevealed){
+					isRevealed = false;
+					buttonText.innerHTML = "<strong>Show Lorem Ipsum</strong>";
+
+					loremIpsum.style.display = "none";
+					loremIpsum.style.transform = "translateX(300%)";
+
+				}
+				else{
+					isRevealed = true;
+					buttonText.innerHTML = "<strong>Hide Lorem Ipsum</strong>";
+
+					loremIpsum.style.display = "block";
+					setTimeout(() => {
+						loremIpsum.style.transform = "translateX(0%)";
+						loremIpsum.style.transition = "transform 2s";
+					}, 0);
+				}
+			}
+		</script>
+	</body>
+</html>

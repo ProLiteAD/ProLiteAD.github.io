@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>My CV</title>
+
+		<meta charset="UTF-8">
+		<meta name="author" content="ProLiteAD">
+		<meta name="description" content="Portfolio">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="icon" type="image" href="../favicon.png">
+		<link rel="stylesheet" type="text/css" href="../styles/main-style.css" media="(min-width: 720px)">
+		<link rel="stylesheet" type="text/css" href="../styles/m_main-style.css" media="(max-width: 719px)">
+		<link rel="stylesheet" type="text/css" href="../styles/projects_grids-styles.css" media="(min-width: 720px)">
+		<link rel="stylesheet" type="text/css" href="../styles/m_projects_grids-styles.css" media="(max-width: 719px)">
+
+		<!-- This gets the 'Anton' Font -->
+		<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+		<style>
+			@keyframes LoadAnimation_Navigation{
+				0%{
+					transform: translateY(-100%);
+				}
+				100%{
+					transform: translateY(0%);
+				}
+			}
+
+			@keyframes LoadAnimation_LeftText{
+				0%{
+					transform: translateX(-100%);
+				}
+				100%{
+					transform: translateX(0%);
+				}
+			}
+
+			@keyframes LoadAnimation_CV-Preview {
+				0%{
+					transform: translateX(100%);
+				}
+				100%{
+					transform: translateX(0%);
+				}
+			}
+
+			@keyframes LoadAnimation_Footer{
+				0%{
+					transform: translateY(100%);
+				}
+				100%{
+					transform: translateY(0%);
+				}
+			}
+
+			nav{
+				animation: LoadAnimation_Navigation 1s ease-out;
+			}
+
+			h1, #tempRemove{
+				animation: LoadAnimation_LeftText 1s ease-out;
+			}
+
+			.grid-left p{
+				animation: LoadAnimation_LeftText 2s ease-out;
+			}
+
+			#cv-preview{
+				animation: LoadAnimation_CV-Preview 2s ease-in-out;
+			}
+
+			footer{
+				animation: LoadAnimation_Footer 2s ease-out;
+			}
+
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<nav>
+				<ul id ="three-lines">
+					<li><a href="#" id="nav-menu">≡</a></li>
+				</ul>
+				<ul id="hidden-menu">
+					<li class="hide-navigation-animation"><a href="index.html">Home</a></li>
+					<li class="hide-navigation-animation"><a href="projects.html">Projects</a></li>
+					<li class="hide-navigation-animation"><a href="my-cv.html" id="currentPage">My CV</a></li>
+					<li class="hide-navigation-animation"><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+
+			<div class="main-content" style="width: auto;">
+
+				<div class="grid-container">
+					<div class="grid-top" style="text-align:left;">
+						<h1>My CV</h1>
+						<p id = "tempRemove" style="color: red;">The files on this page have temporarily been removed!</p>
+					</div>
+					<div class="grid-left">
+						<p><a target="_blank" href ="#">PDF Download</a></p>
+						<p><a href ="#">DOCX Download</a></p>
+
+						<p>Please use the <a href="contact.html">contact page</a> if an alternative format is required.</p>
+					</div>
+					<div class="grid-right">
+						<img id="cv-preview" src="#" alt="cv preview">
+					</div>
+				</div>
+			</div>
+			<footer>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="projects.html">Projects</a></li>
+					<li><a href="my-cv.html">My CV</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+				
+				<p>This website was designed and developed by ProLiteAD</p>
+			</footer>
+		</div>
+
+		<script src="../scripts/m_navigation-bar.js"></script>
+	</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Contact</title>
+
+		<meta charset="UTF-8">
+		<meta name="author" content="ProLiteAD">
+		<meta name="description" content="Portfolio Contact Page">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="icon" type="image" href="../favicon.png">
+		<link rel="stylesheet" type="text/css" href="../styles/main-style.css" media="(min-width:720px)">
+		<link rel="stylesheet" type="text/css" href="../styles/m_main-style.css" media="(max-width: 719px)">
+		<link rel="stylesheet" type="text/css" href="../styles/form-styles.css">
+
+		<!-- This gets the 'Anton' Font -->
+		<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+		<style>
+			/* Start LoadPage Animation */
+			@keyframes LoadAnimation {
+				0%{
+					transform: translateY(-100%);
+				}
+				100%{
+					transform: translateY(0%);
+				}
+			}
+
+			@keyframes LoadAnimation2{
+				0%{
+					transform: translateX(100%);
+				}
+				100%{
+					transform: translateX(0%);
+				}
+			}
+
+			@keyframes LoadAnimation3{
+				0%{
+					transform: translateX(-200%);
+				}
+				100%{
+					transform: translateX(0%);
+				}
+			}
+
+			body{
+				animation: LoadAnimation 0.75s ease-out;
+			}
+
+			form{
+				animation: LoadAnimation2 1.5s ease-out;
+			}
+
+			footer{
+				animation: LoadAnimation3 2s ease-in-out;
+			}
+			/* End LoadPage Animation */
+		</style>
+	</head>
+	<body>
+		<script src="../scripts/contact-form.js"></script>
+		<div class="container">
+			<nav>
+				<ul id ="three-lines">
+					<li><a href="#" id="nav-menu">≡</a></li>
+				</ul>
+				<ul id="hidden-menu">
+					<li class="hide-navigation-animation"><a href="index.html">Home</a></li>
+					<li class="hide-navigation-animation"><a href="projects.html">Projects</a></li>
+					<li class="hide-navigation-animation"><a href="my-cv.html">My CV</a></li>
+					<li class="hide-navigation-animation"><a href="contact-page.html" id="currentPage">Contact</a></li>
+				</ul>
+			</nav>
+
+			<div class="main-content" style="width: 80%;">
+				<h1>Contact</h1>
+				<p style="color: red;">Won't work until I learn PHP! :)</p>
+				<br>
+
+				<form action="">
+					<table>
+						<tr>
+							<th><label for="Title">Title</label></th>
+							<td>
+								<select name="Title" id="InputTitle">
+									<option value="" selected disabled hidden>-Select</option>
+									<option value="Mr">Mr</option>
+									<option value="Mr">Ms</option>
+									<option value="Mr">Mrs</option>
+									<option value="Mr">Other</option>
+								</select>
+							</td>
+							<td id="TitleValidation"></td>
+						</tr>
+						<tr>
+							<th><label for="Firstname">Firstname</label></th>
+							<td><input type="text" id="InputFirstname"></td>
+							<td id="FirstnameValidation"></td>
+						</tr>
+						<tr>
+							<th><label for="Surname">Surname</label></th>
+							<td><input type="text" id="InputSurname"></td>
+						</tr>
+						<tr>
+							<th><label for="Email">Email</label></th>
+							<td><input type="email" id="InputEmail"></td>
+							<td id="EmailValidation"></td>
+						</tr>
+						<tr>
+							<th><label for="Message">Message</label></th>
+						</tr>
+						<tr>
+							<td colspan="2"><textarea name="Message" id="InputMessage" cols="37.5" rows="5"></textarea></td>
+							<td id="MessageValidation"></td>
+						</tr>
+						<tr>
+							<td colspan="2"><input type="button" value="Submit" id="submitButton" style="padding: 0.2em;" onclick="ButtonProcess()"></td>
+						</tr>
+					</table>
+				</form>
+			</div>
+			<footer>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="projects.html">Projects</a></li>
+					<li><a href="my-cv.html">My CV</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+
+				<p>This website was designed and developed by ProLiteAD</p>
+			</footer>
+		</div>
+
+		<script src="../scripts/m_navigation-bar.js"></script>
+	</body>
+</html>

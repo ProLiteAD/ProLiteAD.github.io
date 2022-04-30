@@ -1,0 +1,97 @@
+*{
+	/* border: solid red 1px; */
+	/* border-collapse: collapse; */
+	padding: 0;
+	margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  background-color: #f6faef; /* White:#DBEBC0 (3:1) */
+  color: #38182F; /* #0F3842 */
+  overflow-x: hidden;
+}
+
+.container{
+  background-color: #DBEBC0;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* -- NAVIGATION BAR -- */
+nav{
+  position: fixed;
+  top: 0;
+  margin: auto;
+  width: 100%;
+}
+
+nav ul{
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #264653;
+}
+
+/* Can remove this to make a press to open navigation menu!!! */
+nav ul li a{
+  display: block;
+  color: #49C6E5;
+  padding: 0.5em 2em;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 0.1em;
+  transition: 0.75s;
+}
+
+nav ul li a:hover:not(#nav-menu){
+  background-color: #49C6E5;
+  color: #264653;
+  transition: 0.75s;
+}
+
+nav ul li #currentPage{
+  background-color: #49C6E5;
+  color: #264653;
+}
+
+#hidden-menu{
+  display: none;
+}
+
+.hide-navigation-animation{
+  transform: translate(-100%);
+}
+
+.show-navigation-animation{
+  transform: translateX(0%);
+  transition: transform 2s;
+}
+/* -- END OF NAVIGATION BAR -- */
+
+.main-content{
+  /* padding-top: 3em;
+  padding-left: 2em; */
+  padding: 3em 2em 0em 2em;
+}
+
+p{
+  line-height: 1.2em;
+  margin-top: 1.5em;
+}
+
+footer{
+  background-color:#92d9d3;
+  padding: 0.5em 1em 0.5em 1em;
+  color: #294242;
+  margin-top: 1em;
+}
+
+footer ul{
+  display: none;
+}
+
+footer p {
+  margin-top: 0em;
+}
